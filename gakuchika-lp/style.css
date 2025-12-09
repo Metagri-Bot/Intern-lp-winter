@@ -1072,12 +1072,394 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   Utilities
+   Comprehensive Mobile Styles
    -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
+
+/* Tablet (max-width: 968px) */
+@media (max-width: 968px) {
     .hero-section {
         min-height: auto;
-        padding: 100px 0 60px;
+        padding: 80px 0 40px;
+    }
+
+    .hero-section .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-description br {
+        display: none;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .section-lead br {
+        display: none;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Header */
+    .site-header {
+        padding: 10px 0;
+    }
+
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .logo-image {
+        height: 32px;
+    }
+
+    .btn-header {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 70px 0 40px;
+    }
+
+    .hero-badge {
+        font-size: 0.85rem;
+        padding: 6px 16px;
+        margin-bottom: 16px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+        line-height: 1.8;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    .btn-large {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+
+    .btn-xl {
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 16px;
+    }
+
+    .title-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .section-lead {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    /* AI Questions */
+    .ai-questions {
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .question-card {
+        padding: 16px;
+    }
+
+    .question-icon {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .question-text {
+        font-size: 0.85rem;
+    }
+
+    /* Insight Box */
+    .insight-box {
+        padding: 24px 20px;
+        border-radius: var(--radius-lg);
+    }
+
+    .insight-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .insight-text br {
+        display: none;
+    }
+
+    /* Experience Cards */
+    .experience-card {
+        padding: 24px 20px;
+    }
+
+    .exp-number {
+        font-size: 2.5rem;
+        top: 15px;
+        right: 15px;
+    }
+
+    .exp-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .experience-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-card p {
+        font-size: 0.9rem;
+    }
+
+    .exp-example {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* Episode Cards */
+    .episode-card {
+        padding: 20px 16px;
+    }
+
+    .episode-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .episode-quote {
+        font-size: 0.9rem;
+        padding-left: 12px;
+    }
+
+    .point-item {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+
+    /* Overview */
+    .overview-card {
+        padding: 20px 16px;
+    }
+
+    .ov-icon {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .overview-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .overview-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Activities */
+    .activities-section {
+        padding: 24px 16px;
+        border-radius: var(--radius-lg);
+    }
+
+    .activities-title {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+
+    .activity-item {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .act-icon {
+        font-size: 1.3rem;
+    }
+
+    .act-text {
+        font-size: 0.9rem;
+    }
+
+    /* Voices */
+    .voice-card {
+        padding: 20px 16px;
+    }
+
+    .voice-avatar {
+        font-size: 2.5rem;
+        margin-bottom: 8px;
+    }
+
+    .voice-meta {
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+    }
+
+    .voice-comment {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+
+    .voice-result {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Flow Steps */
+    .step {
+        padding: 24px 16px;
+    }
+
+    .step-icon {
+        font-size: 2rem;
+        margin: 16px 0 10px;
+    }
+
+    .step h3 {
+        font-size: 1rem;
+    }
+
+    .step p {
+        font-size: 0.85rem;
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 16px;
+        font-size: 0.95rem;
+    }
+
+    .faq-icon {
+        font-size: 1.3rem;
+    }
+
+    .faq-answer p {
+        padding: 0 16px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* CTA */
+    .cta-note {
+        font-size: 0.85rem;
+        margin-bottom: 30px;
+    }
+
+    .iframe-wrapper {
+        padding: 12px;
+        border-radius: var(--radius-lg);
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-logo-img {
+        height: 40px;
+    }
+
+    .social-links {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .insight-box {
+        padding: 20px 16px;
+    }
+
+    .btn-xl {
+        padding: 14px 24px;
+        font-size: 0.95rem;
+    }
+
+    .step-arrow {
+        margin: 8px 0;
     }
 }
 
