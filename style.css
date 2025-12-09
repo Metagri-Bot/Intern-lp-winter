@@ -155,15 +155,19 @@ button {
 }
 
 .mg-section-title.white-text,
-.mg-bg-green .mg-section-title,
-.mg-section-entry .mg-section-title,
 .white-text {
     color: #fff !important;
 }
 
+/* インターン生の声・エントリーセクションは黒文字 */
+.mg-bg-green .mg-section-title,
+.mg-section-entry .mg-section-title {
+    color: var(--color-text) !important;
+}
+
 .mg-bg-green .mg-section-lead,
 .mg-section-entry .mg-section-lead {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: var(--color-text-light) !important;
 }
 
 .title-accent {
